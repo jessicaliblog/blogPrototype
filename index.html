@@ -8,13 +8,14 @@
       $.get('https://raw.githubusercontent.com/jessicaliblog/blogPrototype/master/displayText.txt', function (data) {
         var textInfo = data;
       });
-});
+
   var app = new Vue({
     el: '#app',
     data: {
       message: textInfo
     }
 })
+  });
   </script>
 
 </head>

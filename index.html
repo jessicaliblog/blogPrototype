@@ -4,18 +4,19 @@
   <script src="https://unpkg.com/vue"></script>
 
   <script>
-    $(document).ready(function(){
-      $.get('https://raw.githubusercontent.com/jessicaliblog/blogPrototype/master/displayText.txt', function (data) {
-        var textInfo = data;
-      });
+    var td;
+$(document).ready(function(){
+	$.get('https://raw.githubusercontent.com/jessicaliblog/blogPrototype/master/displayText.txt', function (data) {
+  	  td = data;
+  });
 
   var app = new Vue({
-    el: '#app',
-    data: {
-      message: textInfo
+    	el: '#app',
+    	data: {
+    	message: td
     }
-})
-  });
+	})
+});
   </script>
 
 </head>
